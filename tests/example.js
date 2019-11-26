@@ -10,6 +10,8 @@ const pressKey = require('../lib/helpers').pressKey
 const shouldExist = require('../lib/helpers').shouldExist
 
 const generateId = require('../lib/utils').generateId
+const generateEmail = require('../lib/utils').generateEmail
+const generateNumbers = require('../lib/utils').generateNumbers
 
 describe('My first puppeteer test', () => {
   let browser
@@ -91,7 +93,9 @@ describe('My first puppeteer test', () => {
     // await page.waitForSelector('#nav-search')
     // await page.type('#nav-search', 'Javascript')
     // await typeText(page, 'Javascript', '#nav-search')
-    await typeText(page, generateId(15), '#nav-search')
+    // await typeText(page, generateId(15), '#nav-search')
+    // await typeText(page, generateEmail(), '#nav-search')
+    await typeText(page, generateNumbers(), '#nav-search')
     await page.waitFor(3000)
 
     // await page.keyboard.press('Enter')

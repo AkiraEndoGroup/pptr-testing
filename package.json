@@ -1,0 +1,16 @@
+{
+  "name": "pptr-testing-project",
+  "version": "1.0.0",
+  "description": "automamted testing with puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --timeout=30000 ./tests"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "puppeteer": "^2.0.0"
+  }
+}
